@@ -1,0 +1,16 @@
+name = "adahold/onchain"
+version = "0.1.0"
+compiler = "v1.0.28-alpha"
+plutus = "v2"
+license = "Apache-2.0"
+description = "Aiken contracts for AdaHold project (Preview testnet)"
+
+[repository]
+user = "adahold"
+project = "onchain"
+platform = "github"
+
+[[dependencies]]
+name = "aiken-lang/stdlib"
+version = "1.9.0"
+source = "github"
