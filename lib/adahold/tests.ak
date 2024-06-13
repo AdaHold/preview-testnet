@@ -11,7 +11,7 @@ use aiken/transaction/certificate.{
   CredentialDelegation, CredentialDeregistration, CredentialRegistration,
 }
 use aiken/transaction/credential.{
-  Address, Inline, ScriptCredential, VerificationKeyCredential,
+  Address, Inline, ScriptCredential,
 }
 use aiken/transaction/value as aVal
 
