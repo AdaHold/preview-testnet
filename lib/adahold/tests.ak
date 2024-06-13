@@ -10,9 +10,7 @@ use aiken/transaction.{
 use aiken/transaction/certificate.{
   CredentialDelegation, CredentialDeregistration, CredentialRegistration,
 }
-use aiken/transaction/credential.{
-  Address, Inline, ScriptCredential,
-}
+use aiken/transaction/credential.{Address, Inline, ScriptCredential}
 use aiken/transaction/value as aVal
 
 pub fn get_param_utxo_ref() {
