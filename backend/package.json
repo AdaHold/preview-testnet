@@ -1,0 +1,35 @@
+{
+  "name": "backend",
+  "version": "0.1.0",
+  "description": "AdaHold backend",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": "^22.0.0",
+    "pnpm": "^9.0.0"
+  },
+  "scripts": {
+    "dev": "npx ts-node src/index.ts",
+    "serve": "nodemon --watch src src/index.ts",
+    "build": "npx tsc",
+    "prod": "HTTP_PORT=4000 node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://git-remote-url"
+  },
+  "keywords": [],
+  "author": "Dmytro Stashenko",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "bech32": "^2.0.0",
+    "fastify": "^4.28.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.0",
+    "@types/node": "^20.14.11",
+    "nodemon": "^3.1.4",
+    "typescript": "^5.5.3"
+  }
+}

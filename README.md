@@ -1,24 +1,6 @@
 # AdaHold Token Preview Testnet
 
-Aiken contracts for AdaHold project (Preview testnet).
-
-## Building
-
-```sh
-aiken build
-```
-
-## Testing
-
-To run all tests, simply do:
-
-```sh
-aiken check
-```
-
-## Aiken Resources
-
-If you need more info about Aiken language you can find it on the [Aiken's user manual](https://aiken-lang.org).
+Onchain (Smart Contracts) + Offchain (Website UI + Backend) code for AdaHold project (Preview testnet)
 
 ## AdaHold Wiki
 

@@ -1,0 +1,106 @@
+@import '@/assets/css/tailwind.css';
+@import '@/assets/css/fonts.css';
+
+@layer base {
+  ::selection {
+    color: theme(colors.black);
+    background: theme(colors.yellow);
+  }
+}
+
+@layer components {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .scrollbar {
+    overflow: auto;
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable both-edges;
+
+    &::-webkit-scrollbar {
+      width: 0.25rem;
+      margin: 0;
+      padding: 0;
+    }
+    &::-webkit-scrollbar-track-piece {
+      border-radius: 0.25rem;
+      background-color: theme(colors.gray);
+      margin: 0;
+      padding: 0;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 0.25rem;
+      background-color: theme(colors.beige/40);
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+@layer utilities {
+  /* Transform */
+  .scale-70 {
+    --tw-scale-x: 0.7;
+    --tw-scale-y: 0.7;
+  }
+  .scale-80 {
+    --tw-scale-x: 0.8;
+    --tw-scale-y: 0.8;
+  }
+  .scale-0 {
+    --tw-scale-x: 0;
+    --tw-scale-y: 0;
+  }
+  .scale-y-70 {
+    --tw-scale-y: 0.7;
+  }
+  .scale-y-80 {
+    --tw-scale-y: 0.8;
+  }
+  .rotate-180 {
+    --tw-rotate: 180deg;
+  }
+  .-rotate-90 {
+    --tw-rotate: -90deg;
+  }
+
+  /* Filter */
+  .drop-shadow-header {
+    --tw-drop-shadow: drop-shadow(0 5px 0);
+  }
+  .drop-shadow-footer {
+    --tw-drop-shadow: drop-shadow(0 -5px 0);
+  }
+  .drop-shadow-arrow {
+    --tw-drop-shadow: drop-shadow(1px 1px 1px theme(colors.beige/40));
+  }
+  .blur {
+    --blur: blur(2px);
+  }
+
+  /* boxShadow */
+  .shadow {
+    box-shadow: 0 0 8px 1px theme(colors.beige/40);
+  }
+  .shadow-md {
+    box-shadow: 0 0 16px 2px theme(colors.beige/40);
+  }
+  .shadow-yellow {
+    box-shadow: 0 0 8px 1px theme(colors.yellow/70);
+  }
+  .shadow-yellow-md {
+    box-shadow: 0 0 16px 2px theme(colors.yellow/70);
+  }
+  .shadow-red {
+    box-shadow: 0 0 6px 1px theme(colors.red);
+  }
+  .shadow-pink {
+    box-shadow: 0 0 6px 1px theme(colors.pink);
+  }
+
+  /* Before / After pseudo elements */
+  .content {
+    content: '';
+  }
+}
